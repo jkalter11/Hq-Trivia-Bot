@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 if __name__ == "__main__":
 	Question = pyscreenshot.grab(bbox=(100,200,600,400)) #left,top,right,bottom
-	#Question.show()
+	Question.show()
 	Question.save("Question.png")
 	Question = pytesseract.image_to_string(Image.open('Question.png'))
 	print(Question)
